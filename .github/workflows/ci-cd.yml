@@ -37,7 +37,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Push Docker image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/finalproject:latest
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: sinaamini/finalproject:latest
 
   deploy:
     runs-on: ubuntu-latest
