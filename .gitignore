@@ -1,0 +1,57 @@
+# Node modules directory
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables file
+.env
+
+# Directory for secret settings (optional)
+.secrets/
+
+# Typescript cache
+*.tsbuildinfo
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore build output directory
+/dist/
+/build/
+
+# Ignore coverage directory
+coverage/
+
+# Ignore npm global installs
+npm-global/
+
+# Ignore optional dependency directories
+/.nyc_output/
+/coverage/
+/.tmp/
+/temp/
+/out/
+
+# Ignore IDEs and editors' project files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Docker-related files
+docker-compose.override.yml
+
+# Ignore specific config files
+config/local.json
+config/local.js
