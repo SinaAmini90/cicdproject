@@ -45,6 +45,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    container:
+      image: docker:20.10.7
 
     steps:
       - name: SSH and deploy
