@@ -61,7 +61,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/finalproject:latest
+            sudo docker pull docker.arvancloud.ir/${{ secrets.DOCKERHUB_USERNAME }}/finalproject:latest
             sudo docker stop finalproject || true
             sudo docker rm finalproject || true
             sudo docker run -d --name finalproject -p 3000:3000 ${{ secrets.DOCKERHUB_USERNAME }}/finalproject:latest
