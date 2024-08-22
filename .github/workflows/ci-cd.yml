@@ -55,8 +55,8 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-             script: |
-      sudo docker pull sinaamini/finalproject:latest
-      sudo docker stop finalproject || true
-      sudo docker rm finalproject || true
-      sudo docker run -d --name finalproject -p 3000:3000 sinaamini/finalproject:latest
+          script: |
+            sudo docker pull sinaamini/finalproject:latest
+            sudo docker stop finalproject || true
+            sudo docker rm finalproject || true
+            sudo docker run -d --name finalproject -p 3000:3000 sinaamini/finalproject:latest
